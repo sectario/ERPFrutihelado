@@ -33,35 +33,27 @@
     </nav>
 
     <div class="container">
-        <div class="row m-5 border bg-primary">
-            <div class="col"></div>
-            <div class="col m-5">
+        <div class="row m-5 border bg-primary" id="logInContainer">         
+            <div class="col m-1">
                 <form id="forma">
-
                     <div class="img-circle">
                         <a href="recursos_login/styles_login.css" target="_blank">
                             <img src="recursos_login/helado.jpg" class="img-circle" class="img-responsive" alt="helado"
-                                width="200" height="200">
-                            <div class="caption">
-
-                            </div>
+                                width="200" height="200">                     
                         </a>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="User">User</label>
-                        <input type="text" class="form-control" placeholder="Escribe tu usuario" id="User">
+                    <div class="mb-3">           
+                        <input type="text" class="form-control" placeholder="User" id="User">
                     </div>
                     <div class="mb-3">
-                        <label for="Password">Password</label>
-                        <input type="text" class="form-control" placeholder="Escribe codigo de acceso" id="Password">
+                        
+                        <input type="text" class="form-control" placeholder="Password" id="Password">
                     </div>
-                    <div class="mb-3">
-                        <button type="button" onclick="Ingresar" class="btn btn-warning botones">Ingresar</button>
+                    <div class="mb-3" id="logInButton">
+                        <button type="button" onclick="Ingresar" class="btn btn-warning botones"><b>Ingresar</b></button>
                     </div>
                 </form>
             </div>
-            <div class="col"></div>
         </div>
     </div>
 
