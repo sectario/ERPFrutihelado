@@ -1,4 +1,4 @@
-package com.example.controllers;
+package com.example.demo.controler;
 
 import java.util.List;
 
@@ -7,20 +7,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Entity.terceros.Tercero;
-import com.example.demo.services.InterfaceTerceroService;
+import com.example.demo.dto.Tercero;
+import com.example.demo.service.TerceroImpl.TerceroImpl;
 
 @RestController
 @RequestMapping("/api")
-public class TerceroResController {
+public class TerceroControler {
 
 	@Autowired
-	private InterfaceTerceroService terceroService;
+	TerceroImpl terceroServiceImpl;
 	
-	@GetMapping("/terceros")
-	public List<Tercero> index(){
-		
-		return terceroService.FindAll();
+	@GetMapping("/tercero")
+	public List<Tercero> listarTercero(){
+		return terceroServiceImpl.listarTercero();
 	}
 	
 }
