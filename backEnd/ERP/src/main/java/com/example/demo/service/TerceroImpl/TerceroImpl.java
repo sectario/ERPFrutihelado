@@ -24,8 +24,8 @@ public class TerceroImpl implements ITerceroService{
 
 	@Override
 	public Tercero guardarTercero(Tercero tercero) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return iTerceroDao.save(tercero);
 	}
 
 	@Override
