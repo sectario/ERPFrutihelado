@@ -21,8 +21,6 @@ public class Tercero {
 	private String nombre;
 	private String apellido;
 	
-	@OneToOne(mappedBy = "tercero")
-    private Usuario usuario;
 	
 	public Tercero() {
 		

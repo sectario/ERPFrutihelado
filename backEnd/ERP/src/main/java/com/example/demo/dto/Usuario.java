@@ -22,10 +22,8 @@ public class Usuario {
 	private String area;
 	private String subarea;
 	
-	@OneToOne
-	@JoinColumn(name = "id_registro")
-	private Tercero tercero;
-	
+
+
 }
 
 

@@ -1,18 +1,17 @@
 package com.example.demo.service;
 
 import java.util.List;
-
-import com.example.demo.dto.Tercero;
+import com.example.demo.dto.Usuario;
 
 public interface IUsuarioService {
 	
-	public List<Tercero> listarUsuarios();
+	public List<Usuario> listarUsuarios();
 	
-	public Tercero guardarUsuario(Tercero tercero);
+	public Usuario guardarUsuario(Usuario usuario);
 	
-	public Tercero usuarioPorID(Long id_registro);
+	public Usuario usuarioPorID(String username);
 	
-	public Tercero actualizarUsuario(Tercero tercero);
+	public Usuario actualizarUsuario(Usuario usuario);
 	
-	public void eliminarUsuario(Long id_registro);
+	public void eliminarUsuario(String username);
 }
