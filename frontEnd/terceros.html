@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./Proyecto CSS/terceros.css">
-    
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./Proyecto CSS/terceros.css">
+
+  <title>Home</title>
 </head>
+
 <body>
-  
+
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
       <ul class="navbar-nav">
@@ -23,69 +25,75 @@
     </div>
   </nav>
   <div class="container">
-      <div class="menu">
-        <div class="Logo">
-          <img class="cono" src="./Proyecto CSS/helado.jpg">
-        </div>
-        <div class="Usuario">
-          <p class="nombre">Nombre de usuario</p>
-          <img class="circular--square" src="./Proyecto CSS/login.png" />
-        </div>
-        <div class="modulos">
-          <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Modulo de Facturacion</a></li>
-              <li><a href="">Modulo de Inventarios</a></li>
-              <li><a href="">Modulo de Terceros</a></li>
-            </ul>
-        </div>
+    <div class="menu">
+      <div class="Logo">
+        <img class="cono" src="./Proyecto CSS/helado.jpg">
       </div>
-      <div class="terceros">
-        <div><h1>listado de terceros</h1></div>
-        <div class="opciones">
+      <div class="Usuario">
+        <p class="nombre">Nombre de usuario</p>
+        <img class="circular--square" src="./Proyecto CSS/login.png" />
+      </div>
+      <div class="modulos">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Modulo de Facturacion</a></li>
+          <li><a href="">Modulo de Inventarios</a></li>
+          <li><a href="">Modulo de Terceros</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="terceros">
+      <div>
+        <h1>listado de terceros</h1>
+      </div>
+      <div class="opciones">
         <div class="buscar">
           <input type="text" placeholder="Buscar">
         </div>
         <div class="crearTercero">
           <button id="btn-abrir-modal">Crear Tercero</button>
           <dialog id="modal">
-            <div id= "form" class="formulario">
+            <div id="form" class="formulario">
               <div class="window-notice" id="window-notice">
-                  <form action="" method="">
-                      <label for="nombre">Nombre:</label><br>
-                      <input type="text" id="nombre" name="nombre" placeholder="pepito perez"><br>
-                      <label for="telefono">Telefono:</label><br>
-                      <input type="text" id="telefono" name="telefono" placeholder="3131234567"><br><br>
-                      <label for="email">Email:</label><br>
-                      <input type="text" id="email" name="email" placeholder="pepitoperez@hotmail.com"><br><br>
-                      <label for="direccion">Direccion:</label><br>
-                      <input type="text" id="direccion" name="direccion"  placeholder="cra 123 # 45 - 67"><br><br>
-                      <label for="usuario">Usuario:</label><br>
-                      <input type="text" id="usuario" name="usuario" placeholder="pepito_p"><br><br>
-                      <input type="submit" value="Agregar" class="boton agregar"> <input type="button" value="Enviar" class='boton enviar'>
-                  </form>
+                <form action="" method="">
+                  <label for="nombre">Nombre:</label><br>
+                  <input type="text" id="nombre" name="nombre" placeholder="pepito perez"><br>
+                  <label for="telefono">Telefono:</label><br>
+                  <input type="text" id="telefono" name="telefono" placeholder="3131234567"><br><br>
+                  <label for="email">Email:</label><br>
+                  <input type="text" id="email" name="email" placeholder="pepitoperez@hotmail.com"><br><br>
+                  <label for="direccion">Direccion:</label><br>
+                  <input type="text" id="direccion" name="direccion" placeholder="cra 123 # 45 - 67"><br><br>
+                  <label for="usuario">Usuario:</label><br>
+                  <input type="text" id="usuario" name="usuario" placeholder="pepito_p"><br><br>
+                  <input type="submit" value="Agregar" class="boton agregar"> <input type="button" value="Enviar"
+                    class='boton enviar'>
+                </form>
               </div>
             </div>
-            <div> <p><button id="btn-cerrar-modal" onclick="event">Cerrar</button></p> </div> 
-          </dialog>     
-          </div>
-        </div>
-        <div class="tabla" class="hide">
-          <table id="proveedor" class="table table-hover">
-              <thead>            
-                <th>Nombre</th>
-                <th>Telefono</th>
-                <th>Email</th>
-                <th>Direccion</th>
-                <th>Usuario</th>
-              </thead>
-              <tbody>
-              </tbody>
-            </table>
+            <div>
+              <p><button id="btn-cerrar-modal" onclick="event">Cerrar</button></p>
+            </div>
+          </dialog>
         </div>
       </div>
+      <div class="tabla" class="hide">
+        <table id="proveedor" class="table table-hover">
+          <thead>
+            <th>Nombre</th>
+            <th>Telefono</th>
+            <th>Email</th>
+            <th>Direccion</th>
+            <th>Usuario</th>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
       </div>
+    </div>
+  </div>
 
-      <script src="./Proyecto CSS/terceros.js"></script>
+  <script src="./Proyecto CSS/terceros.js"></script>
 </body>
-</html> 
+
+</html>

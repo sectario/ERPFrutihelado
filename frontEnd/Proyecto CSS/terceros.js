@@ -1,15 +1,16 @@
-const url = ":8080/api/tercero"
+const url = "https://rickandmortyapi.com/api/character"
+
 const btnAbrirModal =document.querySelector("#btn-abrir-modal");
 const btnCerrarModal=document.querySelector("#btn-cerrar-modal");
 const modal =document.querySelector("#modal");
 
 
 fetch(url)
-.then(response => response.json() )   
-.then(data =>{
-    console.log(data)
-})
-.catch(err=>console.log(err))
+    .then(response => response.json() )   
+    .then(data =>{
+        console.log(data)
+    })
+    .catch(err=>console.log(err))
 
 
 btnAbrirModal.addEventListener('click',()=>{
