@@ -29,7 +29,6 @@ public class Tercero {
 			String email) {
 		this.id_registro = id_registro;
 		this.nombre = nombre;
-
 		this.direccion = direccion;
 		this.pasword = pasword;
 		this.telefono = telefono;
